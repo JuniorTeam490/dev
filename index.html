@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dávidka Garázsa</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>🚗 Dávidka Garázsa</h1>
+        <p>Makó - Autókozmetika szakértőktől</p>
+    </header>
+
+    <section class="services">
+        <h2>Szolgáltatásaink</h2>
+        <div class="service" onclick="toggleDescription(this)">
+            <h3>Polírozás</h3>
+            <p class="description">Fényezés javítása, karcok eltávolítása, csillogó felület visszaállítása.</p>
+        </div>
+        <div class="service" onclick="toggleDescription(this)">
+            <h3>Belső takarítás</h3>
+            <p class="description">Kárpittisztítás, porszívózás, műszerfal ápolás professzionálisan.</p>
+        </div>
+        <div class="service" onclick="toggleDescription(this)">
+            <h3>Kerámia bevonat</h3>
+            <p class="description">Hosszantartó védelem a külső felületeken a környezeti hatásokkal szemben.</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Galéria</h2>
+        <div class="gallery-container">
+            <img src="img/galeria1.jpg" alt="Galéria kép 1" onclick="openImage(this)">
+            <img src="img/galeria2.jpg" alt="Galéria kép 2" onclick="openImage(this)">
+            <img src="img/galeria3.jpg" alt="Galéria kép 3" onclick="openImage(this)">
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Gyakori kérdések</h2>
+        <div class="accordion">
+            <button class="accordion-button">Milyen gyakran ajánlott autókozmetikát végezni?</button>
+            <div class="accordion-content"><p>2-3 havonta ajánlott egy teljes tisztítás a jármű állapotának megőrzéséhez.</p></div>
+
+            <button class="accordion-button">Mennyi ideig tart egy teljes kezelés?</button>
+            <div class="accordion-content"><p>A kezelés típustól függően 1-3 órát vesz igénybe.</p></div>
+
+            <button class="accordion-button">Használtok vegyszermentes anyagokat?</button>
+            <div class="accordion-content"><p>Igen, környezetbarát, PH-semleges termékeket alkalmazunk.</p></div>
+
+            <button class="accordion-button">Be kell jelentkezni előre?</button>
+            <div class="accordion-content"><p>Igen, előzetes időpontfoglalás szükséges.</p></div>
+
+            <button class="accordion-button">Milyen autótípusokat vállaltok?</button>
+            <div class="accordion-content"><p>Bármilyen személyautót és kisebb terepjárót.</p></div>
+        </div>
+    </section>
+
+    <section class="map">
+        <h2>Hol találsz meg minket?</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2728.2451572353915!2d20.470711776215503!3d46.21589417911682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474487b9b63ba9c3%3A0x4026d2e60d34a80!2sMak%C3%B3!5e0!3m2!1shu!2shu!4v1718473928000!5m2!1shu!2hu"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        <p>📞 +36 30 123 4567 | 📍 Makó, Magyarország</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
